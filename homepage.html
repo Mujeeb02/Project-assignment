@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css">
+  <script src="https://kit.fontawesome.com/0eba0f531d.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="navbar">
+  <div class="logo"><i class="fa-solid fa-caret-up icon"></i>Milton</div>
+  <a href="#" class="toggle">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</a>
+<div class="nav-elements">
+  <a href="#">Features</a>
+  <a href="#">Testimonials</a>
+  <a href="#">Pricing</a>
+  <a href="#">FAQs</a>
+  <a href="#">Blog</a>
+</div>
+<div class="right-elements">
+  <a href="#" id="one">Log in</a>
+  <a href="#" id="two">Get started</a>
+</div>
+</div>
+
+<div class="separator"></div>
+
+<div class="homepage">
+    <div>
+        <p id="pone">An other way to manage time</p>
+    </div>
+  <div>
+    <h1 id="heading">Your new favorite <br><span id="mid">calendar 🗓️ app</span></h1>
+  </div>
+  <div>
+    <p>Here you should explain how cool your app is. Remember, <br> focus on the benefits for your users, not on the features.</p>
+  </div>
+</div>
+<div >
+    <button type="submit" id="butt">Get started,it's free</button>
+    <div>
+        <p id="para1">Free 14 days trials,no credit card needed</p>
+    </div>
+</div>
+<div class="testimonial">
+    <div class="photo">
+        <img src="60111.jpg" alt="" class="pic">
+        <img src="60111.jpg" alt="" class="pic">
+        <img src="60111.jpg" alt="" class="pic">
+        <img src="60111.jpg" alt="" class="pic">
+        <img src="60111.jpg" alt="" class="pic">
+    </div>
+    <div>
+        <div class="starparent">
+           <div>
+            <img src="icons8-star-48.png" alt="" class="starlogo">
+            <img src="icons8-star-48.png" alt="" class="starlogo">
+            <img src="icons8-star-48.png" alt="" class="starlogo">
+            <img src="icons8-star-48.png" alt="" class="starlogo">
+            <img src="icons8-star-48.png" alt="" class="starlogo">
+          
+           </div>
+           <div class="rating">
+            5.0
+           </div>
+        </div>
+        <div>
+            From 200+ happy users
+        </div>
+    </div>
+</div>
+
+<script>
+  const nav = document.querySelector('.toggle');
+  const container = document.querySelector('.nav-elements');
+  const image=document.querySelector('.logo');
+  nav.addEventListener('click', () => {
+    container.classList.toggle('active');
+    image.classList.toggle('active');
+  });
+</script>
+</body>
+</html>

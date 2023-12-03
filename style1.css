@@ -1,0 +1,250 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fef9f6;
+  }
+
+  .navbar {
+    margin-top: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+  }
+  .icon{
+    width: 20px;
+    height: 20px;
+    padding-left: 5px;
+    padding-top: 5px;
+    align-items: center;
+    border-radius: 5px;
+    margin-right: 5px;
+    background-color: #f1f2f4;
+  }
+
+  .logo {
+  padding-left: 160px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    font-weight:700;
+  }
+
+  .nav-elements {
+    display: flex;
+    gap: 20px;
+  }
+
+  .nav-elements a {
+    color: grey;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s;
+  }
+
+  .nav-elements a:hover {
+    color: black;
+    text-decoration: underline;
+  }
+
+  .right-elements {
+    display: flex;
+    gap: 20px;
+    padding-right: 150px;
+  }
+
+  .right-elements a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+  }
+
+  .right-elements a:hover {
+      color: black;
+      /* text-decoration: underline; */
+      transform: scale(1.1);
+  }
+
+  .separator {
+    border-bottom: 1px solid #ccc;
+    margin: 5px 0;
+  }
+
+  .homepage {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .homepage h1 {
+    margin-top: 50px;
+    font-size: 75px;
+    margin-bottom: 10px;
+    /* color: #303030	; */
+    color:rgb(45,45,45);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin-top:0px;
+  }
+  #mid{
+      font-size: 65px;
+  }
+  #one{
+      color: rgb(46, 46, 46);
+      background-color: #f1f2f4;
+  }
+  #two{
+      background-color: rgb(52, 49, 49);
+      color: white;
+      width: 100px;
+  }
+  .homepage p {
+    font-size: 18px;
+    color: #555;
+    font-family: "Plus Jakarta Sans sans-serif";
+  }
+
+  #pone{
+    width: 270px;
+    height: 30px;
+    color: 	black;
+    font-weight: 700;
+    background-color: #f1f2f4;
+    border-radius: 5px;
+    margin-left: 600px;
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  button{
+    height:50px ;
+    width: 250px;
+    background-color: rgb(29, 27, 27);
+    color: white;
+    font-weight: 900;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-left: 650px;
+  }
+  button:hover{
+    cursor: pointer;
+    transition: 0.7s;
+    transform: scale(1.1);
+  }
+  #para1{
+    text-align: center;
+    font-size: 16px;
+    font-family:"Plus Jakarta Sans";
+  }
+  .toggle {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;   
+    flex-direction: column;
+    justify-content: space-between;
+    width: 31px;
+    height: 15px;
+    cursor: pointer; /* Add this to show it's clickable */
+    margin-top: 20px;
+    }
+
+    .bar {
+        height: 3px;
+        width: 100%;
+        background-color: black;
+        border-radius: 10px;
+    }
+  @media (max-width: 898px) {
+
+    .logo {
+      margin-left: 15px;
+      padding-left: 10px; /* Adjusted for smaller screens */
+      margin-bottom: 10px; /* Spacing between logo and navbar elements */
+    }
+
+    .toggle {
+      display: flex;
+      cursor: pointer;
+    }
+
+    .nav-elements {
+      margin-top: 50px;
+      margin-right: 40%;
+      text-align: center;
+      display: none;
+      flex-direction: column;
+    }
+
+    .right-elements{
+      display: none;
+    }
+    .nav-elements.active{
+      display: flex;
+    }
+    .logo.active{
+      margin: 0;
+    }
+  
+    .homepage h1 {
+      font-size: 40px; /* Adjusted font size for smaller screens */
+    }
+  
+    #mid {
+      font-size: 35px; /* Adjusted font size for smaller screens */
+    }
+  
+    .homepage p {
+      font-size: 14px; /* Adjusted font size for smaller screens */
+    }
+  
+    #pone {
+      width: 30%; /* Full width for smaller screens */
+      margin-left: 35%; /* Reset margin for smaller screens */
+    }
+  
+    button {
+      width: 30%; /* Full width for smaller screens */
+      margin-left: 35%; /* Reset margin for smaller screens */
+      align-items: center;
+    }
+  
+  }
+
+  .testimonial{
+    display: flex;
+    justify-content: center;
+  }
+  .photo {
+    position: relative;
+  }
+  
+  .pic {
+    border:3px solid #fef9f6;
+    width: 40px;
+    height: 40px;
+    margin-left: -20px; /* Adjust as needed to control the horizontal overlap */
+    border-radius: 50%;
+    position: relative; /* Added to ensure relative positioning within the container */
+  }
+  
+
+  
+  .starparent{
+    display: flex;
+  }
+  .starlogo{
+    height: 20px;
+    margin: 2px 0;
+    /* margin-left: 3px; */
+  }
+  .rating{
+    margin-top: 5px;
+    padding-left: 5px;
+  }
